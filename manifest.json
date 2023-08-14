@@ -1,6 +1,6 @@
 {
   "name": "Standard Notes Extension",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Standard Notes unofficial extension",
   "permissions": [
     "activeTab",
@@ -8,10 +8,9 @@
     "https://app.standardnotes.org/"
   ],
   "background": {
-    "scripts": ["src/background.js"],
-    "persistent": false
+    "service_worker": "src/background.js"
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "16": "images/icon16.png",
       "32": "images/icon32.png",
@@ -25,5 +24,5 @@
     "48": "images/icon48.png",
     "128": "images/icon128.png"
   },
-  "manifest_version": 2
+  "manifest_version": 3
 }
